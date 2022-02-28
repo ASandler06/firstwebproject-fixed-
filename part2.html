@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Components - Part 2</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <h1>Lists and Inputs</h1>
+    <p>Map of Winnipeg</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164632.821234798!2d-97.29230817572474!3d49.85395901838927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73fbf91a2b11%3A0x2b2a1afac6b9ca64!2sWinnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1645723510164!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <ul type="none">
+        <li><a href="index.html">Home Page</a></li><br>
+        <li><a href="part2.html">part2 Webpage</a></li>
+    </ul>
+    <p>Schools part of PTEC program</p>
+    <ul style="list-style-type: square">
+        <li>Vincent Massey</li>
+        <li>Fort Richmond</li>
+        <li>Shaftesbury</li>
+        <li>Oak Park</li>
+    </ul>
+    <p>Schools Ranked by students</p>
+    <ol>
+        <li>Fort Richmond: &#160;&#160;&#160;1330</li>
+        <li>Vincent Massey: &#8776;1300</li>
+        <li>Oak Park: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 850</li>
+        <li>Shaftesbury: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 746</li>
+    </ol>
+    <dl>
+        <dt>Vincent Massey</dt>
+        <dd>School on 975 Dower Ave</dd>
+        <dt>Shaftesbury</dt>
+        <dd>School on 2240 Grant Ave</dd>
+        <dt>Fort Richmond</dt>
+        <dd>School on 99 Killarney Ave</dd>
+        <dt>Oak Park</dt>
+        <dd>School on 820 Charleswood Rd</dd>
+    </dl>
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>School</th>
+        </tr>
+        <tr>
+            <td>Adam Sandler</td>
+            <td>PTEC/Vincent Massey</td>
+        </tr>
+        <tr>
+            <td>Khaled Ibrahim</td>
+            <td>PTEC/Vincent Massey</td>
+        </tr>
+        <tr>
+            <td>Geno Obonde</td>
+            <td>PTEC/Shaftesbury</td>
+        </tr>
+    </table><br>
+    <form action="">
+        <fieldset>
+            <legend>Survey</legend>
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname"><br><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <p>who do you prefer? <br> Mr.Hardman, Mr.Peers or Mr.Coppens</p>
+            <label for="mchoice">Mr.Hardman</label>
+            <input type="radio" name="tchoice" id="mchoice"><br><br>
+            <label for="pchoice">Mr.Peers</label>
+            <input type="radio" name="pchoice" id="pchoice"><br><br>
+            <label for="cchoice">Mr.Coppens</label>
+            <input type="radio" name="cchoice" id="cchoice"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        <label for="reason">Reason for Choice:</label>
+        <textarea name="reason" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
